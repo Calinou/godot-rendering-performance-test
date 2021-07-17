@@ -10,7 +10,7 @@ config_version=4
 
 [application]
 
-run/main_scene="res://test_directional_light.tscn"
+run/main_scene="res://test.tscn"
 
 [autoload]
 
