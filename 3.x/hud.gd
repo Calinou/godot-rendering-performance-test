@@ -10,7 +10,8 @@ onready var glow_status := $VBoxContainer/GlowStatus as Label
 
 
 func _process(delta: float) -> void:
-	fps_label.text = "%d FPS" % Engine.get_frames_per_second()
+	var fps := Engine.get_frames_per_second()
+	fps_label.text = "%d FPS (%.1f ms)" % [fps, 1000.0 / max(1, fps)]
 
 
 func _input(event) -> void:
