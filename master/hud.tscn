@@ -1,0 +1,110 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://hud.gd" type="Script" id=1]
+
+[node name="HUD" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="FPSLabel" type="Label" parent="."]
+offset_left = 16.0
+offset_top = 16.0
+offset_right = 17.0
+offset_bottom = 39.0
+custom_colors/font_shadow_color = Color(0, 0, 0, 1)
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 1
+custom_constants/shadow_outline_size = 0
+structured_text_bidi_override_options = []
+script = null
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 16.0
+offset_top = -192.0
+offset_right = 488.0
+offset_bottom = -16.0
+script = null
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="DirectionalLightStatus" type="Label" parent="VBoxContainer"]
+offset_right = 472.0
+offset_bottom = 26.0
+custom_colors/font_shadow_color = Color(0, 0, 0, 1)
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 1
+custom_constants/shadow_outline_size = 0
+text = "DirectionalLight: Visible"
+structured_text_bidi_override_options = []
+script = null
+
+[node name="OmniLightsStatus" type="Label" parent="VBoxContainer"]
+offset_top = 30.0
+offset_right = 472.0
+offset_bottom = 56.0
+custom_colors/font_shadow_color = Color(0, 0, 0, 1)
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 1
+custom_constants/shadow_outline_size = 0
+text = "OmniLights: Visible"
+structured_text_bidi_override_options = []
+script = null
+
+[node name="MSAAStatus" type="Label" parent="VBoxContainer"]
+offset_top = 60.0
+offset_right = 472.0
+offset_bottom = 86.0
+custom_colors/font_shadow_color = Color(0, 0, 0, 1)
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 1
+custom_constants/shadow_outline_size = 0
+text = "MSAA: Disabled"
+structured_text_bidi_override_options = []
+script = null
+
+[node name="FXAAStatus" type="Label" parent="VBoxContainer"]
+offset_top = 90.0
+offset_right = 472.0
+offset_bottom = 116.0
+custom_colors/font_shadow_color = Color(0, 0, 0, 1)
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 1
+custom_constants/shadow_outline_size = 0
+text = "FXAA: Disabled"
+structured_text_bidi_override_options = []
+script = null
+
+[node name="SSAOStatus" type="Label" parent="VBoxContainer"]
+offset_top = 120.0
+offset_right = 472.0
+offset_bottom = 146.0
+custom_colors/font_shadow_color = Color(0, 0, 0, 1)
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 1
+custom_constants/shadow_outline_size = 0
+text = "SSAO: Disabled"
+structured_text_bidi_override_options = []
+script = null
+
+[node name="GlowStatus" type="Label" parent="VBoxContainer"]
+offset_top = 150.0
+offset_right = 472.0
+offset_bottom = 176.0
+custom_colors/font_shadow_color = Color(0, 0, 0, 1)
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 1
+custom_constants/shadow_outline_size = 0
+text = "Glow: Disabled"
+structured_text_bidi_override_options = []
+script = null

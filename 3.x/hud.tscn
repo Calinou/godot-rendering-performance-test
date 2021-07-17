@@ -1,0 +1,88 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://hud.gd" type="Script" id=1]
+
+[node name="HUD" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="FPSLabel" type="Label" parent="."]
+margin_left = 16.0
+margin_top = 16.0
+margin_right = 17.0
+margin_bottom = 39.0
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_left = 16.0
+margin_top = -120.0
+margin_right = 488.0
+margin_bottom = -16.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="DirectionalLightStatus" type="Label" parent="VBoxContainer"]
+margin_right = 472.0
+margin_bottom = 14.0
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 1
+text = "DirectionalLight: Visible"
+
+[node name="OmniLightsStatus" type="Label" parent="VBoxContainer"]
+margin_top = 18.0
+margin_right = 472.0
+margin_bottom = 32.0
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 1
+text = "OmniLights: Visible"
+
+[node name="MSAAStatus" type="Label" parent="VBoxContainer"]
+margin_top = 36.0
+margin_right = 472.0
+margin_bottom = 50.0
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 1
+text = "MSAA: Disabled"
+
+[node name="FXAAStatus" type="Label" parent="VBoxContainer"]
+margin_top = 54.0
+margin_right = 472.0
+margin_bottom = 68.0
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 1
+text = "FXAA: Disabled"
+
+[node name="SSAOStatus" type="Label" parent="VBoxContainer"]
+margin_top = 72.0
+margin_right = 472.0
+margin_bottom = 86.0
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 1
+text = "SSAO: Disabled"
+
+[node name="GlowStatus" type="Label" parent="VBoxContainer"]
+margin_top = 90.0
+margin_right = 472.0
+margin_bottom = 104.0
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 1
+text = "Glow: Disabled"
